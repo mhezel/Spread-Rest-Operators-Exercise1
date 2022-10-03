@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <p id="title">Coffee lovers club</p>
+      <button onclick="myFunction()" type="button">Test</button>
+      <form>
+        <span>Signup</span>
+        <br />
+        <span>Username</span>
+        <input type="text" name="Username" />
+        <span>Password</span>
+        <input type="password" name="password" />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <script lang="text/javascript">
+            const myFunction = () => {
+                const users = [{ id:1, name: "Mhez", school: "ADZU" }, { id:2, name: "Rhaidz", school: "WMSU" }]
+                const newUsers = [...users, {id: 3, name: "Violet", school: "ADZU"}];
+                const z= { id:1, name: "Mhez", school: "ADZU", school: "WMSU" }
+      ...
+      SPREAD OPERATOR
+      REST OPERATOR
+
+
+      EXPLORE JS TYPICAL ARRAY AND OBJECT FUNCTIONS
+
+      array
+      .foreach
+      .map
+      .reduce
+      .every
+      .some
+      .concat
+      .filter
+      .find
+
+      object
+      .keys
+      .values
+      .entries
+
+      lodash
+                const sameSchoolUsers = users.map((user) => {
+                  if(user.name === "Mhez"){
+                    return {...user, school: "WMSU"};
+                  }
+                  return user;
+                });
+                console.log(sameSchoolUsers);
+            }
+    </script>
+  </body>
+</html>
